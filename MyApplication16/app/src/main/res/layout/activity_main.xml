@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:background="#008080"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.varunkumar.myapplication.MainActivity">
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:background="#fff"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="130dp"
+        android:id="@+id/username"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:background="#fff"
+        android:hint="Password"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/username"
+        android:id="@+id/password" />
+
+    <Button
+        android:text="Login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#008080"
+        android:layout_below="@+id/password"
+        android:textAlignment="center"
+        android:id="@+id/button" />
+
+    <TextView
+        android:text="Not a member? Sign up now."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/button"
+        android:layout_marginTop="25dp"
+        android:id="@+id/other" />
+</RelativeLayout>
